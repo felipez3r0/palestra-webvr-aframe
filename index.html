@@ -70,7 +70,7 @@
 					<p>
 						WebVR é uma API Javascript (experimental) que permite acesso a dispositivos de Realidade virtual, como o Oculus Rift ou Google Cardboard, no seu navegador.
 					</p>
-				</section>				
+				</section>
 				<section data-background="img/mozandgoogle.png" data-background-size="1024px"></section>
 				<section data-background="img/mozVr.jpg">
 					<h1><em><strong>MozVR</strong></em></h1>
@@ -196,6 +196,25 @@ $ npm install aframe
 					<video autoplay loop class="videos-ok">
 						<source data-src="videos/2016_04_23_07_05_44_07_17_39.mp4" type="video/mp4" />
 					</video>
+				</section>
+				<section>
+					<h1><strong class="big">Usando modelos 3d</strong></h1>
+				</section>
+				<section>
+					<iframe src="exemplo4.html" width="800px" height="600px" class="iframe"></iframe>
+				</section>
+				<section>
+					<pre>
+						<code class="html" data-trim contenteditable>
+<a-assets>
+  <a-asset-item id="poke" src="obj/Pokeball.dae"></a-asset-item>
+</a-assets>
+
+<a-entity light="color: #AFA; intensity: 1.5" position="-1 1 0"></a-entity>
+
+<a-collada-model src="#poke"></a-collada-model>
+						</code>
+					</pre>
 				</section>
 				<section>
 					<h1>Mais detalhes</h1>

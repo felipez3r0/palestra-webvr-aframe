@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+      <a-assets>
+        <a-asset-item id="poke" src="obj/Pokeball.dae"></a-asset-item>
+      </a-assets>
+      <a-entity light="color: #AFA; intensity: 1.5" position="-1 1 0"></a-entity>
+      <a-collada-model src="#poke"></a-collada-model>
+
+    </a-scene>
+  </body>
+</html>
